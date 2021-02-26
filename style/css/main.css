@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #EDF2F8;
+  font-family: "Barlow Semi Condensed";
+  font-size: 13px; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  gap: 30px;
+  justify-items: center;
+  max-width: 1380px;
+  margin: 30px;
+  height: 575px; }
+
+.card {
+  border-radius: 10px;
+  color: white;
+  padding: 30px;
+  font-weight: 500; }
+  .card .info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 12px; }
+    .card .info .info-img {
+      margin-right: 15px; }
+    .card .info .status {
+      font-size: 1.2rem;
+      opacity: 50%; }
+    .card .info .name {
+      font-size: 1.3rem; }
+  .card h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 12px; }
+  .card span {
+    color: #cfcfcf;
+    opacity: 70%;
+    font-weight: 500;
+    display: block;
+    font-size: 1.3rem; }
+
+.img-user {
+  width: 25px;
+  border-radius: 50%;
+  border: 2px #cfcfcf;
+  border-style: solid; }
+
+.card:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: #7541c8;
+  max-width: 540px;
+  height: 220px; }
+  .card:nth-child(1) h1 {
+    color: white; }
+
+.card:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #48556a;
+  max-width: 255px;
+  height: 220px; }
+  .card:nth-child(2) h1 {
+    color: white; }
+
+.card:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: white;
+  max-width: 255px;
+  height: 205px; }
+  .card:nth-child(3) h1 {
+    color: #48556a; }
+
+.card:nth-child(4) {
+  grid-area: 2 / 2 / 3 / 4;
+  background-color: #19212e;
+  max-width: 540px;
+  height: 205px; }
+  .card:nth-child(4) h1 {
+    color: white; }
+
+.card:nth-child(5) {
+  grid-area: 1 / 4 / 3 / 5;
+  background-color: white;
+  max-width: 257px;
+  height: 515px; }
+  .card:nth-child(5) h1 {
+    color: #48556a; }
+  .card:nth-child(5) p {
+    color: #cfcfcf; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
